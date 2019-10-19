@@ -7,6 +7,18 @@
     <title>Brownie du Vicente</title>
 </head>
 <body>
+    <div id="box"></div>
+
+    
+<script>
+window.onload = function(){
+	var box = document.getElementById("box");
+	box.onclick = function(){
+		var div  = document.createElement("div");
+		div.innerHTML = "Div criada pelo JavaScript ^^"
+		this.appendChild(div);
+	};
+};</script>
     
 </body>
 </html>
